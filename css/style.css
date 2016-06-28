@@ -55,6 +55,8 @@ h1, h2 {
 }
 .profile {
 	float: right;
+	height: 200px;
+	width: 200px;
 
 }
 .header-right i {
