@@ -36,7 +36,7 @@ figure{
 
 /* Secciones */
 body {
-	color: white;
+	color: #D8F6CE;
 	font-family: Lato, sans-serif;
 }
 h1, h2 {
@@ -59,6 +59,7 @@ h1, h2 {
 	width: 200px;
 
 }
+
 .header-right i {
 	text-decoration: none;
 	color: grey;
@@ -80,6 +81,12 @@ h1, h2 {
 }
 .fa-facebook-square {
 	color: #3b5998  !important;
+}
+
+header [class*="fa-"]:hover {
+	border: solid 2px #D8F6CE;
+	border-radius: 6px;
+	background-color: #D8F6CE;
 }
 
 /*** Skills ***/
@@ -131,7 +138,7 @@ h1, h2 {
 .contact-button {
 	display: block;
 	border: none;
-	background-color: #06b4f2;
+	background-color: #1B420E;
 	color: #fff;
 	font-family: inherit;
 	text-transform: uppercase;
@@ -142,9 +149,10 @@ h1, h2 {
 	margin: auto;
 	font-weight: bold;
 	font-size: 12px;
-	
-
-
+}
+.contact-button:hover {
+	transition: background-color 0.5s ease;
+	background-color: #58FA58;
 }
 
 /*** Generales ***/
