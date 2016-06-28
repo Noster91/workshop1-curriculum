@@ -1,0 +1,204 @@
+/* Resets*/
+ul,ol{
+    list-style:none; /*elimina la viñeta*/
+    padding:0;
+    margin: 0;
+}
+figure{
+    margin:0; /*aplico margin 0 al logo*/
+}
+.no-border {
+	border:none !important;
+}
+
+/** FONTS **/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+/* Contenedores */
+* {
+    box-sizing: border-box; /*descuenta del ancho y alto, lo sumado
+    en padding y border. Lo descuenta hacia adentro y no hacia afuera*/
+    /*border: 0.1px solid red;*/
+}
+
+/* Grid */
+.container {
+ max-width: 1200px;
+ margin: auto;
+
+}
+
+
+.cleaner {
+	clear: both;
+	border-bottom: solid 2px #1B420E;
+}
+
+/* Secciones */
+body {
+	color: white;
+	font-family: Lato, sans-serif;
+}
+h1, h2 {
+	font-family: 'Lobster', cursive;
+}
+
+#back {
+	background: url(../images/descarga.png) repeat;
+
+}
+
+/*** Header ***/
+.header-right, .header-left {
+	float: left;
+	width: 50%;
+}
+.profile {
+	float: right;
+
+}
+.header-right i {
+	text-decoration: none;
+	color: grey;
+}
+.header-right h4:first-of-type {
+    border-bottom: solid 2px #1B420E;
+}
+.fa-twitter-square {
+	color: #4099FF !important;
+}
+.fa-linkedin-square {
+	color: #0077B5 !important;
+}
+.fa-git-square {
+	color: #333333 !important;
+}
+.fa-instagram {
+	color: #405de6 !important;
+}
+.fa-facebook-square {
+	color: #3b5998  !important;
+}
+
+/*** Skills ***/
+.skills li {
+	float: left;
+	width: 25%;
+}
+.skills {
+	text-align: center;
+}
+.skills h4 {
+	font-size: 30px;
+	margin: 10px 0;
+}
+
+
+/*** Education ***/
+
+.education li {
+	list-style: inside circle;
+	padding-left: 5%;
+}
+
+/*** Contact ***/
+.contact {
+	height: 25%;
+}
+.contact-left, .contact-right {
+	float: left;
+	width: 50%;
+	padding: 0 5px;
+}
+.contact-left input, .contact-right input {
+	width: 100%;
+	display: block;
+
+}
+
+.contact-left input {
+	height: 60px;
+	padding: 15px 5px;
+	margin: 15px 0;
+}
+.contact-right input {
+	height: 200px;
+	padding: 15px 5px;
+	margin: 15px 0;
+}
+.contact-button {
+	display: block;
+	border: none;
+	background-color: #06b4f2;
+	color: #fff;
+	font-family: inherit;
+	text-transform: uppercase;
+	border-radius: 6px;
+	text-decoration: none;
+	padding: 10px 10px 10px 10px;
+	width: 20%;	
+	margin: auto;
+	font-weight: bold;
+	font-size: 12px;
+	
+
+
+}
+
+/*** Generales ***/
+
+
+/** QUERIES **/
+
+@media (max-width: 700px) {
+	.container {
+			width: 95%;
+		}
+	.header-right {
+		width: 100%;
+		text-align: center;
+	}
+	.header-left {
+		position: absolute;
+		visibility: hidden;
+	}
+
+
+	/* Skills */
+	.skills h4{
+		font-size: 18px;
+
+	}
+
+	/* Contact */
+	.contact-button {
+		width: 100%;
+		border-radius: 2px;
+	}
+	.contact-left, .contact-right {
+		width: 100%;
+	}
+	.contact-right input {
+		height: 60px;
+		margin-top: 0;
+	}
+
+
+
+}
+
+@media (max-width: 480px) {
+	.skills h4{
+		visibility: hidden;
+		position: absolute;
+
+	}
+	h1, h2 {
+	font-size: 20px;
+	}
+	i {
+		font-size: 40px !important;
+	}
+
+
+}
