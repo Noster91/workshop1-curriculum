@@ -31,16 +31,17 @@ figure{
 
 .cleaner {
 	clear: both;
-	border-bottom: solid 2px #1B420E;
+	border-bottom: solid 2px #FFAC9A;
 }
 
 /* Secciones */
 body {
-	color: #D8F6CE;
+	color: #9F2D2A;
 	font-family: Lato, sans-serif;
 }
 h1, h2 {
 	font-family: 'Lobster', cursive;
+	color: #852826;
 }
 
 #back {
@@ -57,7 +58,7 @@ h1, h2 {
 	float: right;
 	height: 200px;
 	width: 200px;
-
+	box-shadow: 1px 1px 5px #852826;
 }
 
 .header-right i {
@@ -65,7 +66,7 @@ h1, h2 {
 	color: grey;
 }
 .header-right h4:first-of-type {
-    border-bottom: solid 2px #1B420E;
+    border-bottom: solid 2px #FFAC9A;
 }
 .fa-twitter-square {
 	color: #4099FF !important;
@@ -84,9 +85,9 @@ h1, h2 {
 }
 
 header [class*="fa-"]:hover {
-	border: solid 2px #D8F6CE;
+	border: solid 2px #FFAC9A;
 	border-radius: 6px;
-	background-color: #D8F6CE;
+	background-color: #FFAC9A;
 }
 
 /*** Skills ***/
@@ -138,7 +139,7 @@ header [class*="fa-"]:hover {
 .contact-button {
 	display: block;
 	border: none;
-	background-color: #1B420E;
+	background-color: #CC3834;
 	color: #fff;
 	font-family: inherit;
 	text-transform: uppercase;
@@ -152,7 +153,7 @@ header [class*="fa-"]:hover {
 }
 .contact-button:hover {
 	transition: background-color 0.5s ease;
-	background-color: #58FA58;
+	background-color: #FFAC9A;
 }
 
 /*** Generales ***/
@@ -209,6 +210,10 @@ header [class*="fa-"]:hover {
 	i {
 		font-size: 40px !important;
 	}
-
-
+	.education h3 {
+		font-size: 16px;
+	}
+	.education h4 {
+		font-size: 14px;
+	}
 }
